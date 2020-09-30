@@ -5,11 +5,17 @@ ponto)
 */
 
 
+/*
+a) Lista de hosts distintos (coluna name ), agrupados pela coluna room_type. (0,5
+ponto)
+
+*/
+
 select distinct(name) as host
    
-  from delivery.AB_NYC_2019
+  from ['AB_NYC_2019]
  
-group by room_type
+group by room_type, name
 
 --------------------------------------------------------------------------------------------------
 
