@@ -7,7 +7,7 @@
 # Reginaldo Origuella Filho
 
 
-**Teste técnico para o cargo de Analista de Dados**
+**Teste técnico para o cargo de Analista de Dados.**
 
 
 ---
