@@ -17,7 +17,7 @@ Este teste está subdividido em questões teóricas e práticas, cada qual com s
 devido valor, totalizando 10 pontos.
 Todos os conceitos abordados neste teste fazem parte dos requisitos mínimos ou
 desejáveis para desempenhar o cargo de analista de dados na Delivery Much Brasil.
-Para as questões práticas :**
+Para as questões práticas :
 **- Ao final deste arquivo, nos Anexos , se encontram as diretrizes para
 download do dataset necessário para a realização das atividades;
 **- é necessário escrever o código na linguagem Python ou Node.js, e
