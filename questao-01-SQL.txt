@@ -1,0 +1,56 @@
+/*
+a) Lista de hosts distintos (coluna name ), agrupados pela coluna room_type. (0,5
+ponto)
+
+*/
+
+
+select distinct(name) as host
+   
+  from delivery.AB_NYC_2019
+ 
+group by room_type
+
+--------------------------------------------------------------------------------------------------
+
+
+/*
+b) Total de reviews e média de reviews por mês para hosts localizados no Brooklyn
+( neighbourhood_group ). (1 ponto)
+*/
+select sum(number_of_reviews) as total_reviews, 
+       
+       avg(reviews_per_month) as media_reviews
+	
+from 
+['AB_NYC_2019] 
+
+where 
+neighbourhood_group = 'Brooklyn'
+
+---------------------------------------------------------------------------------------------
+
+
+/*
+c)Trazer a quantidade de dias disponíveis, valores mínimo, máximo e média da coluna
+price para cada host que contenha a palavra room na coluna name e estiveram
+disponíveis ao menos um dia para locação (considere availability_365 como o
+número de dias disponíveis para locação). O resultado deve estar agrupado por
+quantidade de dias disponíveis. (1,5 pontos)
+*/
+
+
+select availability_365 as dias_disponiveis,
+	   
+       min(price) as preco_minimo,
+       
+       max(price) as preco_maximo,
+avg(price) as preco_medio
+    
+from ['AB_NYC_2019]   
+    
+where availability_365 > 0 
+
+and name like '%room%'
+    
+group by availability_365 order by availability_365
