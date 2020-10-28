@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://github.com/reginaldooriguella/DM/blob/master/dm.jpeg?raw=true" >
-</p>
 
 
 
